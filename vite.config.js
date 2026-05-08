@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // Use relative asset paths so the same build works at any sub-path
+  // (e.g. https://user.github.io/repo-name/ on GitHub Pages).
+  base: './',
   server: {
     port: 5173,
   },
